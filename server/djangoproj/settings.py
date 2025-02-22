@@ -28,6 +28,7 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#helps reflect your Django app's root URL,
 ALLOWED_HOSTS = []
 CSRF_TRUSTED_ORIGINS = []
 
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'djangoproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "frontend/static")], #help Django to recognizee the front-end statis file
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,10 +130,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 MEDIA_URL = '/media/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = []
+STATICFILES_DIRS = [ 
+     os.path.join(BASE_DIR, "frontend/static") #help to look for files in the bottom of the filess
+]
 
