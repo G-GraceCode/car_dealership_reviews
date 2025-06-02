@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome, to Dealerships</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+</head>
+
+<body onload="checkSession()">
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar-text">
+          <span class="loginlink" id="loginlogout">
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero-section mt-4 px-3 bg-white">
+    <div class="hero-items d-flex justify-content-around align-items-center">
+      <div class="hero-content text-left w-400 py-8">
+        <h1>Find Your Perfect Car</h1>
+        <p>Explore our wide range of vehicles and drive home your dream car today.</p>
+        <a href="/dealer" class="btn btn-primary mt-4">View Dealerships</a>
+      </div>
+      <div class="hero-image d-flex justify-content-center align-items-center rounded" style="width: 600px; height: 500px;">
+         <img src="static/car_dealership.jpg" alt="Car Hero Image" class="w-100 h-100">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <!-- <footer class="footer bg-light text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>We are a leading car dealership offering the best selection of new and used cars.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Inventory</a></li>
+                    <li><a href="#" class="text-white">Financing</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: sales@cardelership.com</p>
+                <p>Phone: +123 456 789</p>
+                <p>Address: 1234 Car Lane, Auto City</p>
+            </div>
+        </div>
+    </div>
+  </footer>  -->
+    
+  <script src="static/script.js"></script>
+
+</body>
+
+</html>

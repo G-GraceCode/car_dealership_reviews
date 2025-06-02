@@ -1,0 +1,26 @@
+{% load django_vite %} 
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="http://localhost:5173/vite.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'index.css' %}"/>
+    <title>Car Dealership</title>
+    {% vite_hmr_client %}
+    <script type="module">
+        import RefreshRuntime from "http://localhost:5173/@react-refresh"
+
+        RefreshRuntime.injectIntoGlobalHook(window)
+        window.$RefreshReg$ = () => {
+        }
+        window.$RefreshSig$ = () => (type) => type
+        window.__vite_plugin_react_preamble_installed__ = true
+    </script>
+    <script type="module" src="http://localhost:5173/src/main.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
