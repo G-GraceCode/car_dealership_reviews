@@ -29,10 +29,11 @@ SECRET_KEY =\
 DEBUG = True
 
 #helps reflect your Django app's root URL,
-ALLOWED_HOSTS = []
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ["localhost", "https://yannicktandu-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173"] 
+CSRF_TRUSTED_ORIGINS = ["https://yannicktandu-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"]
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://yannicktandu-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"] 
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
