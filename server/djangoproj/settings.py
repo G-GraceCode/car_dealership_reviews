@@ -156,8 +156,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend"),
-    os.path.join(
-        BASE_DIR, "frontend/template"
-    ),  # help to look for files in the bottom of the files
+    os.path.join(BASE_DIR, "frontend/template"),  # help to look for files in the bottom of the files
     os.path.join(BASE_DIR, "frontend/static"),
 ]
