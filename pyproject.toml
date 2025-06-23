@@ -3,4 +3,4 @@ line-length = 120
 [tool.flake8]
 max-line-length = 120
 ignore = ["E501", "F401", "F841", "E712"]
-exclude = [".git", "__pycache__", "venv", "migrations"]
+exclude = [".git", "__pycache__", "venv", "migrations", "build", "dist"]

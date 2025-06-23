@@ -1,4 +1,0 @@
-[flake8]
-exclude = */migrations/*,venv/*,.git/*
-max-line-length = 120
-ignore = E501, E841
